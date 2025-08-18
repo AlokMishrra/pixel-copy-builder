@@ -38,6 +38,27 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* Zero's School Design System */
+    --zero-dark: 220 15% 15%;
+    --zero-dark-secondary: 220 10% 20%;
+    --zero-green: 166 55% 52%;
+    --zero-coral: 4 86% 67%;
+    --zero-blue: 238 84% 60%;
+    --zero-orange: 38 92% 50%;
+    --zero-purple: 269 78% 52%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--zero-dark)), hsl(var(--zero-dark-secondary)));
+    --gradient-green: linear-gradient(135deg, hsl(var(--zero-green)), hsl(166 65% 45%));
+    --gradient-coral: linear-gradient(135deg, hsl(var(--zero-coral)), hsl(4 76% 60%));
+    --gradient-blue: linear-gradient(135deg, hsl(var(--zero-blue)), hsl(238 74% 55%));
+    
+    /* Shadows */
+    --shadow-card: 0 10px 30px -10px hsl(var(--zero-dark) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--zero-blue) / 0.3);
+
+    --radius: 0.5rem;
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;

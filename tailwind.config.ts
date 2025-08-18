@@ -52,6 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Zero's School Colors
+				zero: {
+					dark: 'hsl(var(--zero-dark))',
+					'dark-secondary': 'hsl(var(--zero-dark-secondary))',
+					green: 'hsl(var(--zero-green))',
+					coral: 'hsl(var(--zero-coral))',
+					blue: 'hsl(var(--zero-blue))',
+					orange: 'hsl(var(--zero-orange))',
+					purple: 'hsl(var(--zero-purple))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
