@@ -9,7 +9,7 @@ import CollegeMembershipSection from "@/components/CollegeMembershipSection";
 import CollegeLogosRow from "@/components/CollegeLogosRow";
 
 import StudentSuccessSection from "@/components/StudentSuccessSection";
-import CorporateMembershipSection from "@/components/CorporateMembershipSection";
+
 import MentorSection from "@/components/MentorSection";
 import MentorProfilesSection from "@/components/MentorProfilesSection";
 import GlimpsesSection from "@/components/GlimpsesSection";
@@ -31,7 +31,7 @@ const Index = () => {
       <CollegeLogosRow />
       
       <StudentSuccessSection />
-      <CorporateMembershipSection />
+      
       <MentorSection />
       <MentorProfilesSection />
       <GlimpsesSection />
