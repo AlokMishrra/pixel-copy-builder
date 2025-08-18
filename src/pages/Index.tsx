@@ -6,6 +6,7 @@ import MembershipSection from "@/components/MembershipSection";
 import InstitutionLogosRow from "@/components/InstitutionLogosRow";
 
 import CollegeMembershipSection from "@/components/CollegeMembershipSection";
+import CollegeLogosRow from "@/components/CollegeLogosRow";
 
 import StudentSuccessSection from "@/components/StudentSuccessSection";
 import CorporateMembershipSection from "@/components/CorporateMembershipSection";
@@ -26,6 +27,7 @@ const Index = () => {
       <InstitutionLogosRow />
       
       <CollegeMembershipSection />
+      <CollegeLogosRow />
       
       <StudentSuccessSection />
       <CorporateMembershipSection />
