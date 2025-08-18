@@ -15,6 +15,7 @@ import MentorProfilesSection from "@/components/MentorProfilesSection";
 import GlimpsesSection from "@/components/GlimpsesSection";
 import PartnershipsSection from "@/components/PartnershipsSection";
 import AchievementsSection from "@/components/AchievementsSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -36,6 +37,7 @@ const Index = () => {
       <GlimpsesSection />
       <PartnershipsSection />
       <AchievementsSection />
+      <Footer />
     </div>
   );
 };

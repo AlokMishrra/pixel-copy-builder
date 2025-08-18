@@ -1,0 +1,180 @@
+import { Button } from "@/components/ui/button";
+import { Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-black text-white">
+      {/* Connect Us Section */}
+      <section className="py-12 bg-gradient-to-b from-black to-gray-900">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Connect Us</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Instagram Links */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-xl flex items-center justify-center">
+                  <Instagram className="w-8 h-8 text-white" />
+                </div>
+                <a 
+                  href="https://instagram.com/soumyadeep_zeromonk" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xl font-semibold hover:text-primary transition-colors story-link"
+                >
+                  soumyadeep_zeromonk
+                </a>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-xl flex items-center justify-center">
+                  <Instagram className="w-8 h-8 text-white" />
+                </div>
+                <a 
+                  href="https://instagram.com/zeromonkdiary" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xl font-semibold hover:text-primary transition-colors story-link"
+                >
+                  zeromonkdiary
+                </a>
+              </div>
+            </div>
+            
+            {/* LinkedIn Links */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center">
+                  <Linkedin className="w-8 h-8 text-white" />
+                </div>
+                <a 
+                  href="https://linkedin.com/in/soumyadeep-pramanik" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xl font-semibold hover:text-primary transition-colors story-link"
+                >
+                  Soumyadeep Pramanik
+                </a>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center">
+                  <Linkedin className="w-8 h-8 text-white" />
+                </div>
+                <a 
+                  href="https://linkedin.com/company/zeromonk" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xl font-semibold hover:text-primary transition-colors story-link"
+                >
+                  zeromonk (zero's school)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Footer Section */}
+      <section className="py-16 bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+            {/* Brand Section */}
+            <div className="lg:col-span-1">
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">Z</span>
+                </div>
+                <h3 className="text-2xl font-bold">ZEROMONK</h3>
+              </div>
+              
+              <h4 className="text-xl font-semibold mb-4 text-primary">Be 10 times better</h4>
+              
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Zeromonk builds technologies that help students connect, find communities, and grow.
+              </p>
+              
+              <p className="text-gray-300 leading-relaxed">
+                Zero's School is not just a program; it's a community learning platform designed to bridge the gap between academia(schools & colleges) and industry.
+              </p>
+            </div>
+
+            {/* Education Partner */}
+            <div>
+              <h4 className="text-xl font-semibold mb-6 text-primary">Education partner</h4>
+              <ul className="space-y-3">
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors story-link">Institute</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors story-link">Incubation</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors story-link">Industry</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors story-link">Mentor</a></li>
+              </ul>
+            </div>
+
+            {/* Address */}
+            <div>
+              <h4 className="text-xl font-semibold mb-6 text-primary">Address</h4>
+              <div className="space-y-4">
+                <p className="text-gray-300">HQ. Dehradun</p>
+                <div>
+                  <p className="text-gray-400 text-sm">Ph no</p>
+                  <a href="tel:7001255277" className="text-gray-300 hover:text-white transition-colors story-link">
+                    7001255277
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Follow Us */}
+            <div>
+              <h4 className="text-xl font-semibold mb-6 text-primary">follow us</h4>
+              <div className="flex space-x-4 mb-8">
+                <a href="#" className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors">
+                  <Facebook className="w-6 h-6 text-white" />
+                </a>
+                <a href="#" className="w-12 h-12 bg-gradient-to-r from-pink-500 to-orange-500 rounded-lg flex items-center justify-center hover:opacity-80 transition-opacity">
+                  <Instagram className="w-6 h-6 text-white" />
+                </a>
+                <a href="#" className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                  <Linkedin className="w-6 h-6 text-white" />
+                </a>
+                <a href="#" className="w-12 h-12 bg-sky-500 rounded-lg flex items-center justify-center hover:bg-sky-600 transition-colors">
+                  <Twitter className="w-6 h-6 text-white" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Download Button */}
+          <div className="flex justify-center mt-12">
+            <Button 
+              className="bg-white text-black hover:bg-gray-100 font-semibold px-8 py-3 rounded-full text-lg flex items-center space-x-3 hover-scale transition-all duration-300"
+              onClick={() => {
+                // Add download logic here
+                console.log("Download ZERO clicked");
+              }}
+            >
+              <span>Download ZERO</span>
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Z</span>
+              </div>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Copyright Section */}
+      <section className="py-6 bg-black border-t border-gray-800">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-gray-400 mb-2">© 2024 Copyright: Zeromonk Pvt. Ltd.</p>
+          <div className="flex justify-center space-x-4 text-sm">
+            <a href="#" className="text-gray-400 hover:text-white transition-colors story-link">Privacy Policy</a>
+            <span className="text-gray-600">|</span>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors story-link">Terms & Condition</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  );
+};
+
+export default Footer;
