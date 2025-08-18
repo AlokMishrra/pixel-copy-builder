@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,28 +11,28 @@ import InitializationScreen from "./components/InitializationScreen";
 const queryClient = new QueryClient();
 
 const App = () => {
-  const [showInitialization, setShowInitialization] = useState(true);
+  const [showInitialization, setShowInitialization] = React.useState(true);
 
-  const handleInitializationComplete = () => {
+  const handleInitializationComplete = React.useCallback(() => {
     setShowInitialization(false);
-  };
-
-  if (showInitialization) {
-    return <InitializationScreen onComplete={handleInitializationComplete} />;
-  }
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        {showInitialization ? (
+          <InitializationScreen onComplete={handleInitializationComplete} />
+        ) : (
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        )}
       </TooltipProvider>
     </QueryClientProvider>
   );
