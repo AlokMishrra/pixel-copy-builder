@@ -21,23 +21,53 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection />
-      <ImpactSection />
-      <PartnershipSection />
-      <MembershipSection />
-      <InstitutionLogosRow />
+      <div className="animate-fade-in">
+        <HeroSection />
+      </div>
+      <div className="animate-slide-in-up" style={{ animationDelay: '0.2s' }}>
+        <ImpactSection />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <PartnershipSection />
+      </div>
+      <div className="animate-slide-in-up" style={{ animationDelay: '0.6s' }}>
+        <MembershipSection />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '0.8s' }}>
+        <InstitutionLogosRow />
+      </div>
       
-      <CollegeMembershipSection />
-      <CollegeLogosRow />
+      <div className="animate-slide-in-up" style={{ animationDelay: '1.0s' }}>
+        <CollegeMembershipSection />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '1.2s' }}>
+        <CollegeLogosRow />
+      </div>
       
-      <StudentSuccessSection />
-      <CorporateMembershipSection />
-      <MentorSection />
-      <MentorProfilesSection />
-      <GlimpsesSection />
-      <PartnershipsSection />
-      <AchievementsSection />
-      <Footer />
+      <div className="animate-slide-in-up" style={{ animationDelay: '1.4s' }}>
+        <StudentSuccessSection />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '1.6s' }}>
+        <CorporateMembershipSection />
+      </div>
+      <div className="animate-slide-in-up" style={{ animationDelay: '1.8s' }}>
+        <MentorSection />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '2.0s' }}>
+        <MentorProfilesSection />
+      </div>
+      <div className="animate-slide-in-up" style={{ animationDelay: '2.2s' }}>
+        <GlimpsesSection />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '2.4s' }}>
+        <PartnershipsSection />
+      </div>
+      <div className="animate-slide-in-up" style={{ animationDelay: '2.6s' }}>
+        <AchievementsSection />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '2.8s' }}>
+        <Footer />
+      </div>
     </div>
   );
 };
