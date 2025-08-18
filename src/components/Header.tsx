@@ -2,14 +2,11 @@ const Header = () => {
   return (
     <header className="bg-white py-4 px-6">
       <div className="container mx-auto">
-        <div className="flex items-center">
-          <div className="bg-black text-white px-3 py-2 rounded-md font-bold text-lg">
-            ZS
-          </div>
-          <span className="ml-3 text-xl font-bold text-black">
-            ZERO'S<br />SCHOOL
-          </span>
-        </div>
+        <img 
+          src="/lovable-uploads/61014383-cb06-488a-a631-d0d2acf3e5cc.png" 
+          alt="Zero's School Logo" 
+          className="h-12"
+        />
       </div>
     </header>
   );
