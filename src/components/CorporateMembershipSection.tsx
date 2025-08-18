@@ -66,7 +66,7 @@ const CorporateMembershipSection = () => {
           {/* Center Image */}
           <div className="flex justify-center">
             <img 
-              src="/lovable-uploads/f17e4a36-24a3-44a4-b944-330d2e3be4aa.png" 
+              src="/lovable-uploads/c5bc52fe-0f8d-40f4-b66f-56ccebe07003.png" 
               alt="Professional woman pointing" 
               className="max-w-full h-auto"
             />
