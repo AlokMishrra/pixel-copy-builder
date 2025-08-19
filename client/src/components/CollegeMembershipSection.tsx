@@ -1,9 +1,37 @@
+import React from "react";
 import callBackButton from "@assets/{CD96B002-6945-4258-830A-F268EA34A206}_1755598529152.png";
+import RegistrationDialog from "./RegistrationDialog";
+import SchoolRegistrationForm from "./SchoolRegistrationForm";
+import CollegeRegistrationForm from "./CollegeRegistrationForm";
 
 const CollegeMembershipSection = () => {
+  const [showRegistrationDialog, setShowRegistrationDialog] = React.useState(false);
+  const [showSchoolForm, setShowSchoolForm] = React.useState(false);
+  const [showCollegeForm, setShowCollegeForm] = React.useState(false);
+
+  const handleRegistrationSelect = (type: 'school' | 'college' | 'corporate') => {
+    setShowRegistrationDialog(false);
+    if (type === 'school') {
+      setShowSchoolForm(true);
+    } else if (type === 'college') {
+      setShowCollegeForm(true);
+    }
+  };
+
+  const handleBackToSelection = () => {
+    setShowSchoolForm(false);
+    setShowCollegeForm(false);
+    setShowRegistrationDialog(true);
+  };
+
+  const closeAllDialogs = () => {
+    setShowRegistrationDialog(false);
+    setShowSchoolForm(false);
+    setShowCollegeForm(false);
+  };
+
   const handleScheduleCall = () => {
-    // Add your callback scheduling logic here
-    console.log('Schedule a call back clicked - College Membership');
+    setShowRegistrationDialog(true);
   };
 
   return (
@@ -27,6 +55,13 @@ const CollegeMembershipSection = () => {
           />
         </button>
       </div>
+      
+      {/* Registration Dialogs */}
+      <RegistrationDialog isOpen={showRegistrationDialog} onClose={closeAllDialogs} onSelectType={handleRegistrationSelect} />
+      
+      <SchoolRegistrationForm isOpen={showSchoolForm} onClose={closeAllDialogs} onBack={handleBackToSelection} />
+      
+      <CollegeRegistrationForm isOpen={showCollegeForm} onClose={closeAllDialogs} onBack={handleBackToSelection} />
     </section>
   );
 };
