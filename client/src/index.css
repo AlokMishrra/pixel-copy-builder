@@ -13,10 +13,10 @@
 }
 
 .scroll-animation {
-  animation: scroll-logos 25s linear infinite;
+  animation: scroll-logos 30s linear infinite;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   min-width: fit-content;
 }
 

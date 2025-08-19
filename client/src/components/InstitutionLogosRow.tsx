@@ -24,11 +24,11 @@ const InstitutionLogosRow = () => {
           {/* Create seamless loop with duplicated logos */}
           {[...logos, ...logos, ...logos].map((logo, index) => (
             <div key={index} className="flex-shrink-0">
-              <div className="w-24 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
+              <div className="w-32 h-32 bg-white rounded-lg shadow-lg p-3 flex items-center justify-center border border-gray-200">
                 <img 
                   src={logo.src} 
                   alt={logo.alt}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain filter brightness-100 contrast-110"
                 />
               </div>
             </div>
