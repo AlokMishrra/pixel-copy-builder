@@ -1,9 +1,39 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
+import RegistrationDialog from "./RegistrationDialog";
+import SchoolRegistrationForm from "./SchoolRegistrationForm";
+import CollegeRegistrationForm from "./CollegeRegistrationForm";
 
 const Footer = () => {
+  const [showRegistrationDialog, setShowRegistrationDialog] = React.useState(false);
+  const [showSchoolForm, setShowSchoolForm] = React.useState(false);
+  const [showCollegeForm, setShowCollegeForm] = React.useState(false);
+
+  const handleRegistrationSelect = (type: 'school' | 'college' | 'corporate') => {
+    setShowRegistrationDialog(false);
+    if (type === 'school') {
+      setShowSchoolForm(true);
+    } else if (type === 'college') {
+      setShowCollegeForm(true);
+    }
+  };
+
+  const handleBackToSelection = () => {
+    setShowSchoolForm(false);
+    setShowCollegeForm(false);
+    setShowRegistrationDialog(true);
+  };
+
+  const closeAllDialogs = () => {
+    setShowRegistrationDialog(false);
+    setShowSchoolForm(false);
+    setShowCollegeForm(false);
+  };
+
   return (
-    <footer className="bg-black text-white">
+    <>
+      <footer className="bg-black text-white">
       {/* Connect Us Section */}
       <section className="py-12 bg-gradient-to-b from-black to-gray-900">
         <div className="container mx-auto px-4">
@@ -144,10 +174,17 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Download Button */}
-          <div className="flex justify-center mt-12">
+          {/* Action Buttons */}
+          <div className="flex justify-center gap-4 mt-12">
             <Button 
-              className="bg-white text-black hover:bg-gray-100 font-semibold px-8 py-3 rounded-full text-lg flex items-center space-x-3 hover-scale transition-all duration-300"
+              onClick={() => setShowRegistrationDialog(true)}
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg text-lg hover-scale transition-all duration-300"
+            >
+              Register Now
+            </Button>
+            
+            <Button 
+              className="bg-white text-black hover:bg-gray-100 font-semibold px-8 py-3 rounded-lg text-lg flex items-center space-x-3 hover-scale transition-all duration-300"
               onClick={() => {
                 // Add download logic here
                 console.log("Download ZERO clicked");
@@ -173,7 +210,27 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      
+      {/* Registration Dialogs */}
+      <RegistrationDialog 
+        isOpen={showRegistrationDialog}
+        onClose={closeAllDialogs}
+        onSelectType={handleRegistrationSelect}
+      />
+      
+      <SchoolRegistrationForm 
+        isOpen={showSchoolForm}
+        onClose={closeAllDialogs}
+        onBack={handleBackToSelection}
+      />
+      
+      <CollegeRegistrationForm 
+        isOpen={showCollegeForm}
+        onClose={closeAllDialogs}
+        onBack={handleBackToSelection}
+      />
     </footer>
+    </>
   );
 };
 
