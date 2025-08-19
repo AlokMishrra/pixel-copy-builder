@@ -15,6 +15,7 @@ import MentorProfilesSection from "@/components/MentorProfilesSection";
 import GlimpsesSection from "@/components/GlimpsesSection";
 import PartnershipsSection from "@/components/PartnershipsSection";
 import AchievementsSection from "@/components/AchievementsSection";
+import RegisterCallToAction from "@/components/RegisterCallToAction";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -66,6 +67,9 @@ const Index = () => {
         <AchievementsSection />
       </div>
       <div className="animate-fade-in" style={{ animationDelay: '2.8s' }}>
+        <RegisterCallToAction />
+      </div>
+      <div className="animate-slide-in-up" style={{ animationDelay: '3.0s' }}>
         <Footer />
       </div>
     </div>
