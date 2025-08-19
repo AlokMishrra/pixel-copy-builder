@@ -4,6 +4,7 @@ import { Building2, Rocket, Factory, Users } from "lucide-react";
 import RegistrationDialog from "./RegistrationDialog";
 import SchoolRegistrationForm from "./SchoolRegistrationForm";
 import CollegeRegistrationForm from "./CollegeRegistrationForm";
+import sicBannerImage from "@assets/{F5585F70-DAFD-4317-B654-C636743F6000}_1755609005086.png";
 
 const PartnershipSection = () => {
   const [showRegistrationDialog, setShowRegistrationDialog] = React.useState(false);
@@ -91,6 +92,20 @@ const PartnershipSection = () => {
               <CardTitle className="text-lg text-white font-semibold">Mentor</CardTitle>
             </CardHeader>
           </Card>
+        </div>
+        
+        {/* School Innovation Council Banner */}
+        <div className="mt-16 max-w-2xl mx-auto">
+          <div 
+            className="cursor-pointer transition-all hover:scale-105 duration-300"
+            onClick={() => setShowSchoolForm(true)}
+          >
+            <img 
+              src={sicBannerImage} 
+              alt="Kickstart Your School Innovation Council with ZERO'S SCHOOL" 
+              className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            />
+          </div>
         </div>
       </div>
       
