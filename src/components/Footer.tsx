@@ -35,36 +35,36 @@ const Footer = () => {
     <>
       <footer className="bg-black text-white">
       {/* Connect Us Section */}
-      <section className="py-12 bg-gradient-to-b from-black to-gray-900">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Connect Us</h2>
+      <section className="py-8 sm:py-12 bg-gradient-to-b from-black to-gray-900">
+        <div className="container mx-auto">
+          <h2 className="responsive-subheading font-bold text-center mb-8 sm:mb-12">Connect Us</h2>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
             {/* Instagram Links */}
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-xl flex items-center justify-center">
-                  <Instagram className="w-8 h-8 text-white" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-xl flex items-center justify-center">
+                  <Instagram className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
                 <a 
                   href="https://instagram.com/soumyadeep_zeromonk" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-xl font-semibold hover:text-primary transition-colors story-link"
+                  className="text-lg sm:text-xl font-semibold hover:text-primary transition-colors story-link break-all"
                 >
                   soumyadeep_zeromonk
                 </a>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-xl flex items-center justify-center">
-                  <Instagram className="w-8 h-8 text-white" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-xl flex items-center justify-center">
+                  <Instagram className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
                 <a 
                   href="https://instagram.com/zeromonkdiary" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-xl font-semibold hover:text-primary transition-colors story-link"
+                  className="text-lg sm:text-xl font-semibold hover:text-primary transition-colors story-link break-all"
                 >
                   zeromonkdiary
                 </a>
@@ -72,30 +72,30 @@ const Footer = () => {
             </div>
             
             {/* LinkedIn Links */}
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center">
-                  <Linkedin className="w-8 h-8 text-white" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-xl flex items-center justify-center">
+                  <Linkedin className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
                 <a 
                   href="https://linkedin.com/in/soumyadeep-pramanik" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-xl font-semibold hover:text-primary transition-colors story-link"
+                  className="text-lg sm:text-xl font-semibold hover:text-primary transition-colors story-link break-all"
                 >
                   Soumyadeep Pramanik
                 </a>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center">
-                  <Linkedin className="w-8 h-8 text-white" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-xl flex items-center justify-center">
+                  <Linkedin className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
                 <a 
                   href="https://linkedin.com/company/zeromonk" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-xl font-semibold hover:text-primary transition-colors story-link"
+                  className="text-lg sm:text-xl font-semibold hover:text-primary transition-colors story-link break-all"
                 >
                   zeromonk (zero's school)
                 </a>
@@ -106,9 +106,9 @@ const Footer = () => {
       </section>
 
       {/* Main Footer Section */}
-      <section className="py-16 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+      <section className="py-12 sm:py-16 bg-gray-900">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
@@ -175,16 +175,16 @@ const Footer = () => {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex justify-center gap-4 mt-12">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-12">
             <Button 
               onClick={() => setShowRegistrationDialog(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg text-lg hover-scale transition-all duration-300"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold responsive-btn rounded-lg hover-scale transition-all duration-300 w-full sm:w-auto"
             >
               Register Now
             </Button>
             
             <Button 
-              className="bg-white text-black hover:bg-gray-100 font-semibold px-8 py-3 rounded-lg text-lg flex items-center space-x-3 hover-scale transition-all duration-300"
+              className="bg-white text-black hover:bg-gray-100 font-semibold responsive-btn rounded-lg flex items-center justify-center space-x-3 hover-scale transition-all duration-300 w-full sm:w-auto"
               onClick={() => {
                 // Add download logic here
                 console.log("Download ZERO clicked");
@@ -200,12 +200,12 @@ const Footer = () => {
       </section>
 
       {/* Copyright Section */}
-      <section className="py-6 bg-black border-t border-gray-800">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400 mb-2">© 2024 Copyright: Zeromonk Pvt. Ltd.</p>
-          <div className="flex justify-center space-x-4 text-sm">
+      <section className="py-4 sm:py-6 bg-black border-t border-gray-800">
+        <div className="container mx-auto text-center">
+          <p className="text-gray-400 mb-2 text-sm sm:text-base">© 2024 Copyright: Zeromonk Pvt. Ltd.</p>
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm">
             <a href="#" className="text-gray-400 hover:text-white transition-colors story-link">Privacy Policy</a>
-            <span className="text-gray-600">|</span>
+            <span className="text-gray-600 hidden sm:inline">|</span>
             <a href="#" className="text-gray-400 hover:text-white transition-colors story-link">Terms & Condition</a>
           </div>
         </div>

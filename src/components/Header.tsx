@@ -32,19 +32,20 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white py-4 px-6 shadow-sm">
+      <header className="bg-white py-3 sm:py-4 px-4 sm:px-6 shadow-sm sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <img 
             src="/lovable-uploads/61014383-cb06-488a-a631-d0d2acf3e5cc.png" 
             alt="Zero's School Logo" 
-            className="h-12"
+            className="h-8 sm:h-10 md:h-12 w-auto"
           />
           
           <Button 
             onClick={() => setShowRegistrationDialog(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold responsive-btn rounded-lg transition-all duration-200 hover:scale-105"
           >
-            Register Now
+            <span className="hidden sm:inline">Register Now</span>
+            <span className="sm:hidden">Register</span>
           </Button>
         </div>
       </header>
