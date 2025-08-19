@@ -4,7 +4,6 @@ import ImpactSection from "@/components/ImpactSection";
 import PartnershipSection from "@/components/PartnershipSection";
 import MembershipSection from "@/components/MembershipSection";
 import InstitutionLogosRow from "@/components/InstitutionLogosRow";
-import SchoolInnovationSection from "@/components/SchoolInnovationSection";
 
 import CollegeMembershipSection from "@/components/CollegeMembershipSection";
 import CollegeLogosRow from "@/components/CollegeLogosRow";
@@ -37,39 +36,36 @@ const Index = () => {
       <div className="animate-fade-in" style={{ animationDelay: '0.8s' }}>
         <InstitutionLogosRow />
       </div>
-      <div className="animate-slide-in-up" style={{ animationDelay: '1.0s' }}>
-        <SchoolInnovationSection />
-      </div>
       
-      <div className="animate-slide-in-up" style={{ animationDelay: '1.2s' }}>
+      <div className="animate-slide-in-up" style={{ animationDelay: '1.0s' }}>
         <CollegeMembershipSection />
       </div>
-      <div className="animate-fade-in" style={{ animationDelay: '1.4s' }}>
+      <div className="animate-fade-in" style={{ animationDelay: '1.2s' }}>
         <CollegeLogosRow />
       </div>
       
-      <div className="animate-slide-in-up" style={{ animationDelay: '1.6s' }}>
+      <div className="animate-slide-in-up" style={{ animationDelay: '1.4s' }}>
         <StudentSuccessSection />
       </div>
-      <div className="animate-fade-in" style={{ animationDelay: '1.8s' }}>
+      <div className="animate-fade-in" style={{ animationDelay: '1.6s' }}>
         <CorporateMembershipSection />
       </div>
-      <div className="animate-slide-in-up" style={{ animationDelay: '2.0s' }}>
+      <div className="animate-slide-in-up" style={{ animationDelay: '1.8s' }}>
         <MentorSection />
       </div>
-      <div className="animate-fade-in" style={{ animationDelay: '2.2s' }}>
+      <div className="animate-fade-in" style={{ animationDelay: '2.0s' }}>
         <MentorProfilesSection />
       </div>
-      <div className="animate-slide-in-up" style={{ animationDelay: '2.4s' }}>
+      <div className="animate-slide-in-up" style={{ animationDelay: '2.2s' }}>
         <GlimpsesSection />
       </div>
-      <div className="animate-fade-in" style={{ animationDelay: '2.6s' }}>
+      <div className="animate-fade-in" style={{ animationDelay: '2.4s' }}>
         <PartnershipsSection />
       </div>
-      <div className="animate-slide-in-up" style={{ animationDelay: '2.8s' }}>
+      <div className="animate-slide-in-up" style={{ animationDelay: '2.6s' }}>
         <AchievementsSection />
       </div>
-      <div className="animate-fade-in" style={{ animationDelay: '3.0s' }}>
+      <div className="animate-fade-in" style={{ animationDelay: '2.8s' }}>
         <Footer />
       </div>
     </div>
