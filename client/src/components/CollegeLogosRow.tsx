@@ -1,11 +1,14 @@
 const CollegeLogosRow = () => {
-  // Array of logos (you can replace these with your actual logo URLs)
+  // Array of individual college logos
   const logos = [
-    "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png",
-    "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png",
-    "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png",
-    "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png",
-    "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png"
+    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 1" },
+    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 2" },
+    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 3" },
+    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 4" },
+    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 5" },
+    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 6" },
+    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 7" },
+    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 8" }
   ];
 
   return (
@@ -17,8 +20,8 @@ const CollegeLogosRow = () => {
             <div key={index} className="flex-shrink-0">
               <div className="w-24 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
                 <img 
-                  src={logo} 
-                  alt={`Partner College ${index + 1}`}
+                  src={logo.src} 
+                  alt={logo.alt}
                   className="w-full h-full object-contain"
                 />
               </div>
