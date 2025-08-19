@@ -1,4 +1,4 @@
-import callBackButton from "@assets/{CD96B002-6945-4258-830A-F268EA34A206}_1755598417780.png";
+import callBackButton from "@assets/{CD96B002-6945-4258-830A-F268EA34A206}_1755598529152.png";
 
 const CollegeMembershipSection = () => {
   const handleScheduleCall = () => {
