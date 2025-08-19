@@ -32,21 +32,21 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white py-3 sm:py-4 px-4 sm:px-6 shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <Button 
-              onClick={() => setShowRegistrationDialog(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 px-3 py-2 text-sm sm:px-4 sm:py-2 sm:text-base md:px-6 md:py-3 md:text-lg whitespace-nowrap"
-            >
-              <span className="hidden sm:inline">Register Now</span>
-              <span className="sm:hidden">Register</span>
-            </Button>
-            
+      <header className="bg-white py-2 sm:py-3 md:py-4 px-3 sm:px-4 md:px-6 shadow-sm sticky top-0 z-50">
+        <div className="container mx-auto flex justify-between items-center max-w-full">
+          <Button 
+            onClick={() => setShowRegistrationDialog(true)}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm md:px-4 md:py-2 md:text-base lg:px-6 lg:py-3 lg:text-lg whitespace-nowrap flex-shrink-0"
+          >
+            <span className="hidden sm:inline">Register Now</span>
+            <span className="sm:hidden">Register</span>
+          </Button>
+          
+          <div className="flex-1 flex justify-center ml-2 sm:ml-4">
             <img 
               src="/lovable-uploads/61014383-cb06-488a-a631-d0d2acf3e5cc.png" 
               alt="Zero's School Logo" 
-              className="h-8 sm:h-10 md:h-12 w-auto"
+              className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto max-w-[60vw] object-contain"
             />
           </div>
         </div>
