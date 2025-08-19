@@ -32,7 +32,7 @@ const HeroSection = () => {
       {/* Register Now Button Overlay */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center space-y-6">
-          <Button onClick={() => setShowRegistrationDialog(true)} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 text-xl rounded-lg shadow-lg transform transition-transform hover:scale-105 animate-fade-in ml-[450px]">
+          <Button onClick={() => setShowRegistrationDialog(true)} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 text-xl rounded-lg shadow-lg transform transition-transform hover:scale-105 animate-fade-in ml-[450px] mt-16">
             Register Now
           </Button>
         </div>
