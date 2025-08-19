@@ -27,11 +27,11 @@ const HeroSection = () => {
     setShowCollegeForm(false);
   };
   return (
-    <section className="relative bg-gray-900 min-h-screen">
+    <section className="relative">
       <img 
         src="/lovable-uploads/20310da3-69f3-4ddc-a071-390ee0bb1d35.png" 
         alt="Join India's Largest Institutional Chain - Zero's School Hero Section" 
-        className="w-full h-auto min-h-screen object-cover"
+        className="w-full h-auto"
       />
       
       {/* Registration Dialogs */}
