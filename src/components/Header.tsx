@@ -33,8 +33,8 @@ const Header = () => {
             <span className="sm:hidden">Register</span>
           </Button>
           
-          <div className="flex-1 flex justify-center ml-2 sm:ml-48 ">
-            <img src="/lovable-uploads/61014383-cb06-488a-a631-d0d2acf3e5cc.png" alt="Zero's School Logo" className="h-9 sm:h-8 md:h-12 lg:h-14 xl:h-16 w-auto max-w-[50vw] sm:max-w-[45vw] md:max-w-[40vw] lg:max-w-none object-contain" />
+          <div className="flex-1 flex justify-center ml-2 sm:ml-4">
+            <img src="/lovable-uploads/7f8c3fc8-41c9-43a5-91f4-d22447cd3c78.png" alt="Zero's School Header Logo" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto object-contain" />
           </div>
         </div>
       </header>
