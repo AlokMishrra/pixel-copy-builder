@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import RegistrationDialog from "./RegistrationDialog";
 import SchoolRegistrationForm from "./SchoolRegistrationForm";
 import CollegeRegistrationForm from "./CollegeRegistrationForm";
+import newHeroImage from "@assets/{A88C4743-C004-4317-92F6-C68AB46550D5}_1755609271815.png";
 const HeroSection = () => {
   const [showRegistrationDialog, setShowRegistrationDialog] = React.useState(false);
   const [showSchoolForm, setShowSchoolForm] = React.useState(false);
@@ -28,11 +29,13 @@ const HeroSection = () => {
   };
   return (
     <section className="relative">
-      <img 
-        src="/lovable-uploads/20310da3-69f3-4ddc-a071-390ee0bb1d35.png" 
-        alt="Join India's Largest Institutional Chain - Zero's School Hero Section" 
-        className="w-full h-auto"
-      />
+      <div className="relative cursor-pointer" onClick={() => setShowSchoolForm(true)}>
+        <img 
+          src={newHeroImage} 
+          alt="Join India's Largest Institutional Chain - Kickstart Your School Innovation Council with ZERO'S SCHOOL" 
+          className="w-full h-auto hover:opacity-95 transition-opacity duration-300"
+        />
+      </div>
       
       {/* Registration Dialogs */}
       <RegistrationDialog isOpen={showRegistrationDialog} onClose={closeAllDialogs} onSelectType={handleRegistrationSelect} />
