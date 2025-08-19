@@ -34,7 +34,7 @@ const Header = () => {
           </Button>
           
           <div className="flex-1 flex justify-center ml-2 sm:ml-48 ">
-            <img src="/lovable-uploads/61014383-cb06-488a-a631-d0d2acf3e5cc.png" alt="Zero's School Logo" className="h-14 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto max-w-[50vw] sm:max-w-[45vw] md:max-w-[40vw] lg:max-w-none object-contain opacity-60" />
+            <img src="/lovable-uploads/61014383-cb06-488a-a631-d0d2acf3e5cc.png" alt="Zero's School Logo" className="h-14 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto max-w-[50vw] sm:max-w-[45vw] md:max-w-[40vw] lg:max-w-none object-contain" />
           </div>
         </div>
       </header>
