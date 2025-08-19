@@ -40,7 +40,7 @@ const SchoolRegistrationForm = ({ isOpen, onClose, onBack }: SchoolRegistrationF
 
   const handlePdfClick = () => {
     // Open PDF in new tab
-    const pdfUrl = "/attached_assets/MEMORANDUM OF UNDERSTANDING (MoU ZeroSchool)_1755602106189.pdf";
+    const pdfUrl = "/attached_assets/MEMORANDUM%20OF%20UNDERSTANDING%20(MoU%20ZeroSchool)_1755602106189.pdf";
     window.open(pdfUrl, '_blank');
     setHasViewedPdf(true);
   };
