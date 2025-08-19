@@ -113,7 +113,7 @@ const Footer = () => {
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="@assets/{65A9A868-AB19-4B5C-8A6D-B4F1E64EBDAD}_1755601272689.png" 
+                  src="@assets/{65A9A868-AB19-4B5C-8A6D-B4F1E64EBDAD}_1755601406430.png" 
                   alt="ZEROMONK Logo" 
                   className="w-12 h-12"
                 />
@@ -194,7 +194,7 @@ const Footer = () => {
             >
               <span>Download ZERO</span>
               <img 
-                src="@assets/{65A9A868-AB19-4B5C-8A6D-B4F1E64EBDAD}_1755601272689.png" 
+                src="@assets/{65A9A868-AB19-4B5C-8A6D-B4F1E64EBDAD}_1755601406430.png" 
                 alt="ZEROMONK Logo" 
                 className="w-8 h-8"
               />
