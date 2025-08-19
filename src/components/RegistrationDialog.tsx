@@ -13,9 +13,9 @@ interface RegistrationDialogProps {
 const RegistrationDialog = ({ isOpen, onClose, onSelectType }: RegistrationDialogProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle className="text-center text-2xl font-bold text-primary">
+      <DialogContent className="w-[95vw] max-w-md mx-auto my-8 max-h-[90vh] overflow-y-auto">
+        <DialogHeader className="pb-4">
+          <DialogTitle className="text-center text-xl sm:text-2xl font-bold text-primary">
             Choose Registration Type
           </DialogTitle>
         </DialogHeader>
@@ -55,8 +55,12 @@ const RegistrationDialog = ({ isOpen, onClose, onSelectType }: RegistrationDialo
           </Card>
         </div>
 
-        <div className="flex justify-center pt-4">
-          <Button variant="outline" onClick={onClose}>
+        <div className="flex justify-center pt-4 pb-2">
+          <Button 
+            variant="outline" 
+            onClick={onClose}
+            className="w-full sm:w-auto min-w-[120px]"
+          >
             Cancel
           </Button>
         </div>

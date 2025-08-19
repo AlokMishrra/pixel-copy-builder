@@ -27,9 +27,9 @@ const CollegeRegistrationForm = ({ isOpen, onClose, onBack }: CollegeRegistratio
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle className="text-center text-2xl font-bold text-primary">
+      <DialogContent className="w-[95vw] max-w-2xl mx-auto my-4 max-h-[95vh] overflow-y-auto">
+        <DialogHeader className="pb-4 sticky top-0 bg-background z-10">
+          <DialogTitle className="text-center text-xl sm:text-2xl font-bold text-primary">
             College Registration Form
           </DialogTitle>
         </DialogHeader>
@@ -171,15 +171,28 @@ const CollegeRegistrationForm = ({ isOpen, onClose, onBack }: CollegeRegistratio
             />
           </div>
 
-          <div className="flex justify-between pt-4">
-            <Button type="button" variant="outline" onClick={onBack}>
+          <div className="flex flex-col sm:flex-row justify-between gap-3 pt-6 pb-4 sticky bottom-0 bg-background border-t">
+            <Button 
+              type="button" 
+              variant="outline" 
+              onClick={onBack}
+              className="w-full sm:w-auto min-w-[100px]"
+            >
               Back
             </Button>
-            <div className="space-x-2">
-              <Button type="button" variant="outline" onClick={onClose}>
+            <div className="flex flex-col sm:flex-row gap-2 sm:space-x-2">
+              <Button 
+                type="button" 
+                variant="outline" 
+                onClick={onClose}
+                className="w-full sm:w-auto min-w-[100px]"
+              >
                 Cancel
               </Button>
-              <Button type="submit" className="bg-primary hover:bg-primary/90">
+              <Button 
+                type="submit" 
+                className="bg-primary hover:bg-primary/90 w-full sm:w-auto min-w-[150px]"
+              >
                 Submit Registration
               </Button>
             </div>

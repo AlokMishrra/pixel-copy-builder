@@ -42,7 +42,7 @@ const Header = () => {
           
           <Button 
             onClick={() => setShowRegistrationDialog(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold responsive-btn rounded-lg transition-all duration-200 hover:scale-105"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 px-3 py-2 text-sm sm:px-4 sm:py-2 sm:text-base md:px-6 md:py-3 md:text-lg whitespace-nowrap"
           >
             <span className="hidden sm:inline">Register Now</span>
             <span className="sm:hidden">Register</span>
