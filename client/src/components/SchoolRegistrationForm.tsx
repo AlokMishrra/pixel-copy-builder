@@ -16,14 +16,33 @@ interface SchoolRegistrationFormProps {
 
 const SchoolRegistrationForm = ({ isOpen, onClose, onBack }: SchoolRegistrationFormProps) => {
   const { toast } = useToast();
+  const [sicRegistration, setSicRegistration] = React.useState(false);
+  const [hasViewedPdf, setHasViewedPdf] = React.useState(false);
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (sicRegistration && !hasViewedPdf) {
+      toast({
+        title: "PDF Required",
+        description: "Please view the MoU PDF before submitting your registration for School Innovation Council.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
     toast({
       title: "Registration Submitted",
       description: "Your school registration has been submitted successfully. We'll contact you soon!",
     });
     onClose();
+  };
+
+  const handlePdfClick = () => {
+    // Open PDF in new tab
+    const pdfUrl = "/attached_assets/MEMORANDUM OF UNDERSTANDING (MoU ZeroSchool)_1755602106189.pdf";
+    window.open(pdfUrl, '_blank');
+    setHasViewedPdf(true);
   };
 
   return (
@@ -68,14 +87,38 @@ const SchoolRegistrationForm = ({ isOpen, onClose, onBack }: SchoolRegistrationF
             <Input id="emailAddress" type="email" placeholder="Enter email address" required />
           </div>
 
-          <div className="flex items-center space-x-2">
-            <Checkbox id="schoolInnovationCouncil" />
-            <Label 
-              htmlFor="schoolInnovationCouncil" 
-              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-            >
-              Want to register your school for School Innovation Council?
-            </Label>
+          <div className="space-y-3">
+            <div className="flex items-center space-x-2">
+              <Checkbox 
+                id="schoolInnovationCouncil" 
+                checked={sicRegistration}
+                onCheckedChange={(checked) => setSicRegistration(checked as boolean)}
+              />
+              <Label 
+                htmlFor="schoolInnovationCouncil" 
+                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              >
+                Want to register your school for School Innovation Council?
+              </Label>
+            </div>
+            
+            {sicRegistration && (
+              <div className="ml-6 text-sm">
+                <p className="text-gray-600 mb-2">
+                  Please review the Memorandum of Understanding (MoU) before proceeding:
+                </p>
+                <button
+                  type="button"
+                  onClick={handlePdfClick}
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  View MoU PDF Document
+                </button>
+                {hasViewedPdf && (
+                  <p className="text-green-600 text-xs mt-1">✓ PDF viewed successfully</p>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="flex flex-col sm:flex-row justify-between gap-3 pt-6 pb-4 sticky bottom-0 bg-background border-t">
