@@ -1,5 +1,5 @@
 import React from "react";
-import callBackButton from "@assets/{CD96B002-6945-4258-830A-F268EA34A206}_1755598529152.png";
+import callBackButton from "@assets/{281F4828-F1D0-4AD5-9FD8-0C15C9CF6EE7}_1755598624766.png";
 import RegistrationDialog from "./RegistrationDialog";
 import SchoolRegistrationForm from "./SchoolRegistrationForm";
 import CollegeRegistrationForm from "./CollegeRegistrationForm";
