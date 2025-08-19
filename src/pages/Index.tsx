@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import SchoolInnovationSection from "@/components/SchoolInnovationSection";
 import ImpactSection from "@/components/ImpactSection";
 import PartnershipSection from "@/components/PartnershipSection";
 import MembershipSection from "@/components/MembershipSection";
@@ -24,9 +23,6 @@ const Index = () => {
       <Header />
       <div className="animate-fade-in">
         <HeroSection />
-      </div>
-      <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-        <SchoolInnovationSection />
       </div>
       <div className="animate-slide-in-up" style={{ animationDelay: '0.2s' }}>
         <ImpactSection />
