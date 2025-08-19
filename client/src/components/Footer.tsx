@@ -115,7 +115,7 @@ const Footer = () => {
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-lg">Z</span>
                 </div>
-                <h3 className="text-2xl font-bold">ZEROMONK</h3>
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 via-pink-500 to-orange-500 bg-clip-text text-transparent">ZEROMONK</h3>
               </div>
               
               <h4 className="text-xl font-semibold mb-4 text-primary">Be 10 times better</h4>
