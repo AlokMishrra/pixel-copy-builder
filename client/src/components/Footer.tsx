@@ -111,7 +111,13 @@ const Footer = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-1">
-              
+              <div className="mb-6">
+                <img 
+                  src="@assets/image_1755601572382.png" 
+                  alt="ZEROMONK Logo" 
+                  className="h-12 w-auto"
+                />
+              </div>
               
               <h4 className="text-xl font-semibold mb-4 text-primary">Be 10 times better</h4>
               
