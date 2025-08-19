@@ -46,7 +46,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/61014383-cb06-488a-a631-d0d2acf3e5cc.png" 
               alt="Zero's School Logo" 
-              className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto max-w-[60vw] object-contain"
+              className="h-7 sm:h-9 md:h-11 lg:h-14 xl:h-16 w-auto max-w-[50vw] sm:max-w-[45vw] md:max-w-[40vw] lg:max-w-none object-contain"
             />
           </div>
         </div>
