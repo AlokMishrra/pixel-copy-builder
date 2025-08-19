@@ -35,7 +35,7 @@ const Footer = () => {
     <>
       <footer className="bg-black text-white">
       {/* Connect Us Section */}
-      <section className="py-8 sm:py-12 from-black to-gray-900 bg-[#573c3ceb]">
+      <section className="py-8 sm:py-12 from-black to-gray-900 bg-[#000000eb]">
         <div className="container mx-auto">
           <h2 className="responsive-subheading font-bold text-center mb-8 sm:mb-12">Connect Us</h2>
           
