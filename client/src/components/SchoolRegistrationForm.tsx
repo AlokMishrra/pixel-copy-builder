@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 
 interface SchoolRegistrationFormProps {
@@ -41,100 +42,40 @@ const SchoolRegistrationForm = ({ isOpen, onClose, onBack }: SchoolRegistrationF
               <Input id="schoolName" placeholder="Enter school name" required />
             </div>
             <div>
-              <Label htmlFor="principalName">Principal Name *</Label>
-              <Input id="principalName" placeholder="Enter principal name" required />
+              <Label htmlFor="authorizedPersonName">Authorized Person Name *</Label>
+              <Input id="authorizedPersonName" placeholder="Enter authorized person name" required />
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <Label htmlFor="email">Email Address *</Label>
-              <Input id="email" type="email" placeholder="Enter email address" required />
+              <Label htmlFor="contactNumber">Contact Number *</Label>
+              <Input id="contactNumber" type="tel" placeholder="Enter contact number" required />
             </div>
             <div>
-              <Label htmlFor="phone">Phone Number *</Label>
-              <Input id="phone" type="tel" placeholder="Enter phone number" required />
+              <Label htmlFor="designation">Designation *</Label>
+              <Input id="designation" placeholder="Enter designation (e.g., Principal, Director)" required />
             </div>
           </div>
 
           <div>
-            <Label htmlFor="address">School Address *</Label>
-            <Textarea id="address" placeholder="Enter complete school address" required />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <Label htmlFor="city">City *</Label>
-              <Input id="city" placeholder="Enter city" required />
-            </div>
-            <div>
-              <Label htmlFor="state">State *</Label>
-              <Select required>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select state" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="andhra-pradesh">Andhra Pradesh</SelectItem>
-                  <SelectItem value="karnataka">Karnataka</SelectItem>
-                  <SelectItem value="tamil-nadu">Tamil Nadu</SelectItem>
-                  <SelectItem value="telangana">Telangana</SelectItem>
-                  <SelectItem value="kerala">Kerala</SelectItem>
-                  {/* Add more states as needed */}
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <Label htmlFor="pincode">Pincode *</Label>
-              <Input id="pincode" placeholder="Enter pincode" required />
-            </div>
-            <div>
-              <Label htmlFor="affiliation">Board Affiliation</Label>
-              <Select>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select board" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="cbse">CBSE</SelectItem>
-                  <SelectItem value="icse">ICSE</SelectItem>
-                  <SelectItem value="state-board">State Board</SelectItem>
-                  <SelectItem value="ib">International Baccalaureate</SelectItem>
-                  <SelectItem value="cambridge">Cambridge</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <Label htmlFor="studentCount">Number of Students</Label>
-              <Select>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select range" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="0-100">0-100</SelectItem>
-                  <SelectItem value="101-500">101-500</SelectItem>
-                  <SelectItem value="501-1000">501-1000</SelectItem>
-                  <SelectItem value="1000+">1000+</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-            <div>
-              <Label htmlFor="established">Year Established</Label>
-              <Input id="established" type="number" placeholder="Enter year" />
-            </div>
+            <Label htmlFor="schoolAddress">School Address *</Label>
+            <Textarea id="schoolAddress" placeholder="Enter complete school address" required />
           </div>
 
           <div>
-            <Label htmlFor="requirements">Specific Requirements</Label>
-            <Textarea 
-              id="requirements" 
-              placeholder="Tell us about your specific requirements and how we can help your school"
-              rows={3}
-            />
+            <Label htmlFor="emailAddress">Email Address *</Label>
+            <Input id="emailAddress" type="email" placeholder="Enter email address" required />
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <Checkbox id="schoolInnovationCouncil" />
+            <Label 
+              htmlFor="schoolInnovationCouncil" 
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              Want to register your school for School Innovation Council?
+            </Label>
           </div>
 
           <div className="flex flex-col sm:flex-row justify-between gap-3 pt-6 pb-4 sticky bottom-0 bg-background border-t">
