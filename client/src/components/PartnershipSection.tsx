@@ -1,17 +1,40 @@
+import React from "react";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Rocket, Factory, Users } from "lucide-react";
+import RegistrationDialog from "./RegistrationDialog";
+import SchoolRegistrationForm from "./SchoolRegistrationForm";
+import CollegeRegistrationForm from "./CollegeRegistrationForm";
 
-interface PartnershipSectionProps {
-  onSelectPartnership?: (type: 'institute' | 'incubation' | 'industry' | 'mentor') => void;
-}
+const PartnershipSection = () => {
+  const [showRegistrationDialog, setShowRegistrationDialog] = React.useState(false);
+  const [showSchoolForm, setShowSchoolForm] = React.useState(false);
+  const [showCollegeForm, setShowCollegeForm] = React.useState(false);
 
-const PartnershipSection = ({ onSelectPartnership }: PartnershipSectionProps) => {
-  const handlePartnershipClick = (type: 'institute' | 'incubation' | 'industry' | 'mentor') => {
-    if (onSelectPartnership) {
-      onSelectPartnership(type);
-    } else {
-      console.log(`Selected partnership: ${type}`);
+  const handleRegistrationSelect = (type: 'school' | 'college' | 'corporate') => {
+    setShowRegistrationDialog(false);
+    if (type === 'school') {
+      setShowSchoolForm(true);
+    } else if (type === 'college') {
+      setShowCollegeForm(true);
     }
+    // Corporate and other types can be handled when forms are available
+  };
+
+  const handleBackToSelection = () => {
+    setShowSchoolForm(false);
+    setShowCollegeForm(false);
+    setShowRegistrationDialog(true);
+  };
+
+  const closeAllDialogs = () => {
+    setShowRegistrationDialog(false);
+    setShowSchoolForm(false);
+    setShowCollegeForm(false);
+  };
+
+  const handlePartnershipClick = (type: 'institute' | 'incubation' | 'industry' | 'mentor') => {
+    // Open registration dialog for all partnership types
+    setShowRegistrationDialog(true);
   };
 
   return (
@@ -70,6 +93,13 @@ const PartnershipSection = ({ onSelectPartnership }: PartnershipSectionProps) =>
           </Card>
         </div>
       </div>
+      
+      {/* Registration Dialogs */}
+      <RegistrationDialog isOpen={showRegistrationDialog} onClose={closeAllDialogs} onSelectType={handleRegistrationSelect} />
+      
+      <SchoolRegistrationForm isOpen={showSchoolForm} onClose={closeAllDialogs} onBack={handleBackToSelection} />
+      
+      <CollegeRegistrationForm isOpen={showCollegeForm} onClose={closeAllDialogs} onBack={handleBackToSelection} />
     </section>
   );
 };
