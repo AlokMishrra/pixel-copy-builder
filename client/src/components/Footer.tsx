@@ -184,21 +184,6 @@ const Footer = () => {
             >
               Register Now
             </Button>
-            
-            <Button 
-              className="bg-white text-black hover:bg-gray-100 font-semibold responsive-btn rounded-lg flex items-center justify-center space-x-3 hover-scale transition-all duration-300 w-full sm:w-auto"
-              onClick={() => {
-                // Add download logic here
-                console.log("Download ZERO clicked");
-              }}
-            >
-              <span>Download ZERO</span>
-              <img 
-                src="@assets/{65A9A868-AB19-4B5C-8A6D-B4F1E64EBDAD}_1755601406430.png" 
-                alt="ZEROMONK Logo" 
-                className="w-8 h-8"
-              />
-            </Button>
           </div>
         </div>
       </section>
