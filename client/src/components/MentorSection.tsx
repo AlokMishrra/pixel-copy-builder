@@ -37,7 +37,7 @@ const MentorSection = () => {
   return (
     <>
       {/* Schedule a Call back button above mentor section */}
-      <div className="flex justify-center py-8 bg-gray-50">
+      <div className="flex justify-center py-8 bg-[#0d0e0f]">
         <Button 
           className="bg-muted/90 hover:bg-muted text-foreground font-semibold px-8 py-3 rounded-lg shadow-lg backdrop-blur-sm border border-border/20 transition-all duration-300 hover:scale-105"
           onClick={handleCallbackClick}
@@ -45,7 +45,6 @@ const MentorSection = () => {
           Schedule a Call back
         </Button>
       </div>
-
       <section className="relative">
         <img 
           src="/lovable-uploads/fff8712a-6060-44d9-b86d-e178b298bd92.png" 
@@ -53,12 +52,9 @@ const MentorSection = () => {
           className="w-full h-auto"
         />
       </section>
-
       {/* Registration Dialogs */}
       <RegistrationDialog isOpen={showRegistrationDialog} onClose={closeAllDialogs} onSelectType={handleRegistrationSelect} />
-      
       <SchoolRegistrationForm isOpen={showSchoolForm} onClose={closeAllDialogs} onBack={handleBackToSelection} />
-      
       <CollegeRegistrationForm isOpen={showCollegeForm} onClose={closeAllDialogs} onBack={handleBackToSelection} />
     </>
   );
