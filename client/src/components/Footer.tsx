@@ -112,15 +112,11 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 relative">
-                  <div className="w-full h-full rounded-2xl bg-gradient-to-br from-green-300 via-blue-500 via-purple-600 to-orange-400 flex items-center justify-center relative overflow-hidden">
-                    <span className="text-white font-bold text-lg z-10">Z</span>
-                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-400 rounded-full"></div>
-                    <div className="absolute top-1 -left-1 w-2 h-2 bg-pink-400 rounded-full"></div>
-                    <div className="absolute -bottom-1 right-1 w-2.5 h-2.5 bg-yellow-300 rounded-full"></div>
-                    <div className="absolute bottom-2 -left-1 w-1.5 h-1.5 bg-green-300 rounded-full"></div>
-                  </div>
-                </div>
+                <img 
+                  src="@assets/{65A9A868-AB19-4B5C-8A6D-B4F1E64EBDAD}_1755601272689.png" 
+                  alt="ZEROMONK Logo" 
+                  className="w-12 h-12"
+                />
                 <h3 className="text-2xl font-bold text-white">ZEROMONK</h3>
               </div>
               
@@ -197,14 +193,11 @@ const Footer = () => {
               }}
             >
               <span>Download ZERO</span>
-              <div className="w-8 h-8 relative">
-                <div className="w-full h-full rounded-xl bg-gradient-to-br from-green-300 via-blue-500 via-purple-600 to-orange-400 flex items-center justify-center relative overflow-hidden">
-                  <span className="text-white font-bold text-sm z-10">Z</span>
-                  <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-red-400 rounded-full"></div>
-                  <div className="absolute top-0.5 -left-0.5 w-1.5 h-1.5 bg-pink-400 rounded-full"></div>
-                  <div className="absolute -bottom-0.5 right-0.5 w-1.5 h-1.5 bg-yellow-300 rounded-full"></div>
-                </div>
-              </div>
+              <img 
+                src="@assets/{65A9A868-AB19-4B5C-8A6D-B4F1E64EBDAD}_1755601272689.png" 
+                alt="ZEROMONK Logo" 
+                className="w-8 h-8"
+              />
             </Button>
           </div>
         </div>
