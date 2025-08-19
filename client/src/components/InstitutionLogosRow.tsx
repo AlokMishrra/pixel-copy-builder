@@ -1,20 +1,20 @@
-import logo1 from "@assets/{1DBD2033-F101-40B0-8BE5-09EBE1F43EA8}_1755597948806.png";
-import logo2 from "@assets/image_1755597951310.png";
-import logo3 from "@assets/image_1755597953875.png";
-import logo4 from "@assets/image_1755597956949.png";
-import logo5 from "@assets/image_1755597966248.png";
+import jisGroup from "@assets/{5AC34B60-74C7-4BF4-BAD0-EA81E4489EBA}_1755598194090.png";
+import maharishi from "@assets/image_1755598196867.png";
+import dbsSchool from "@assets/image_1755598201187.png";
+import amityUniversity from "@assets/image_1755598205029.png";
+import quantumUniversity from "@assets/image_1755598209136.png";
 
 const InstitutionLogosRow = () => {
   // Array of individual institution logos
   const logos = [
-    { src: logo1, alt: "Partner Institution 1" },
-    { src: logo2, alt: "Partner Institution 2" },
-    { src: logo3, alt: "Partner Institution 3" },
-    { src: logo4, alt: "Partner Institution 4" },
-    { src: logo5, alt: "Partner Institution 5" },
-    { src: logo1, alt: "Partner Institution 6" },
-    { src: logo2, alt: "Partner Institution 7" },
-    { src: logo3, alt: "Partner Institution 8" }
+    { src: jisGroup, alt: "JIS Group" },
+    { src: maharishi, alt: "Maharishi Markandeshwar University" },
+    { src: dbsSchool, alt: "DBS Business School" },
+    { src: amityUniversity, alt: "Amity University" },
+    { src: quantumUniversity, alt: "Quantum University" },
+    { src: jisGroup, alt: "JIS Group" },
+    { src: maharishi, alt: "Maharishi Markandeshwar University" },
+    { src: dbsSchool, alt: "DBS Business School" }
   ];
 
   return (
