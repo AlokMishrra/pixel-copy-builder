@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Continuous logo scroll animation */
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-animation {
+  animation: scroll-logos 25s linear infinite;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  min-width: fit-content;
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
