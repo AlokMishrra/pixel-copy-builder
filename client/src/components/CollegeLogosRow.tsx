@@ -1,14 +1,20 @@
+import logo1 from "@assets/{1DBD2033-F101-40B0-8BE5-09EBE1F43EA8}_1755597948806.png";
+import logo2 from "@assets/image_1755597951310.png";
+import logo3 from "@assets/image_1755597953875.png";
+import logo4 from "@assets/image_1755597956949.png";
+import logo5 from "@assets/image_1755597966248.png";
+
 const CollegeLogosRow = () => {
   // Array of individual college logos
   const logos = [
-    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 1" },
-    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 2" },
-    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 3" },
-    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 4" },
-    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 5" },
-    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 6" },
-    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 7" },
-    { src: "/lovable-uploads/40220d2d-e7fd-4668-96c3-18a688c5195c.png", alt: "Partner College 8" }
+    { src: logo1, alt: "Partner College 1" },
+    { src: logo2, alt: "Partner College 2" },
+    { src: logo3, alt: "Partner College 3" },
+    { src: logo4, alt: "Partner College 4" },
+    { src: logo5, alt: "Partner College 5" },
+    { src: logo4, alt: "Partner College 6" },
+    { src: logo3, alt: "Partner College 7" },
+    { src: logo2, alt: "Partner College 8" }
   ];
 
   return (

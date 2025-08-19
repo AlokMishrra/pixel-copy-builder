@@ -1,16 +1,20 @@
-import logoImage from "@assets/{DBEC4599-C991-4008-8C09-51C6E688CA63}_1755597685863.png";
+import logo1 from "@assets/{1DBD2033-F101-40B0-8BE5-09EBE1F43EA8}_1755597948806.png";
+import logo2 from "@assets/image_1755597951310.png";
+import logo3 from "@assets/image_1755597953875.png";
+import logo4 from "@assets/image_1755597956949.png";
+import logo5 from "@assets/image_1755597966248.png";
 
 const InstitutionLogosRow = () => {
   // Array of individual institution logos
   const logos = [
-    { src: logoImage, alt: "Partner Institution 1" },
-    { src: "/lovable-uploads/e306fe7d-0ccc-4d5e-a206-6324b88b67a0.png", alt: "Partner Institution 2" },
-    { src: "/lovable-uploads/e306fe7d-0ccc-4d5e-a206-6324b88b67a0.png", alt: "Partner Institution 3" },
-    { src: "/lovable-uploads/e306fe7d-0ccc-4d5e-a206-6324b88b67a0.png", alt: "Partner Institution 4" },
-    { src: "/lovable-uploads/e306fe7d-0ccc-4d5e-a206-6324b88b67a0.png", alt: "Partner Institution 5" },
-    { src: "/lovable-uploads/e306fe7d-0ccc-4d5e-a206-6324b88b67a0.png", alt: "Partner Institution 6" },
-    { src: "/lovable-uploads/e306fe7d-0ccc-4d5e-a206-6324b88b67a0.png", alt: "Partner Institution 7" },
-    { src: "/lovable-uploads/e306fe7d-0ccc-4d5e-a206-6324b88b67a0.png", alt: "Partner Institution 8" }
+    { src: logo1, alt: "Partner Institution 1" },
+    { src: logo2, alt: "Partner Institution 2" },
+    { src: logo3, alt: "Partner Institution 3" },
+    { src: logo4, alt: "Partner Institution 4" },
+    { src: logo5, alt: "Partner Institution 5" },
+    { src: logo1, alt: "Partner Institution 6" },
+    { src: logo2, alt: "Partner Institution 7" },
+    { src: logo3, alt: "Partner Institution 8" }
   ];
 
   return (
