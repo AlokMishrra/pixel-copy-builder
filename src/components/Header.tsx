@@ -28,14 +28,14 @@ const Header = () => {
   return <>
       <header className="bg-white py-2 sm:py-3 md:py-4 px-3 sm:px-4 md:px-6 shadow-sm sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center max-w-full">
+          <div className="flex items-center">
+            <img src="/lovable-uploads/96de9f44-4844-4f56-a66c-02f9217d26cf.png" alt="Zero's School Logo" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto object-contain" />
+          </div>
+          
           <Button onClick={() => setShowRegistrationDialog(true)} className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm md:px-4 md:py-2 md:text-base lg:px-6 lg:py-3 lg:text-lg whitespace-nowrap flex-shrink-0">
             <span className="hidden sm:inline">Register Now</span>
             <span className="sm:hidden">Register</span>
           </Button>
-          
-          <div className="flex-1 flex justify-center ml-2 sm:ml-4">
-            <img src="/lovable-uploads/7f8c3fc8-41c9-43a5-91f4-d22447cd3c78.png" alt="Zero's School Header Logo" className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto object-contain" />
-          </div>
         </div>
       </header>
 
