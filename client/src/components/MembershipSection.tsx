@@ -45,7 +45,7 @@ const MembershipSection = () => {
       <div className="flex justify-center py-8">
         <button 
           onClick={handleScheduleCall}
-          className="bg-black px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-gray-300"
+          className="bg-red-500 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-300"
         >
           <span className="text-white font-semibold text-lg">
             Schedule a Call back
