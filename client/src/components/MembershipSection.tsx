@@ -1,5 +1,4 @@
 import React from "react";
-import callBackButton from "@assets/{281F4828-F1D0-4AD5-9FD8-0C15C9CF6EE7}_1755598624766.png";
 import RegistrationDialog from "./RegistrationDialog";
 import SchoolRegistrationForm from "./SchoolRegistrationForm";
 import CollegeRegistrationForm from "./CollegeRegistrationForm";
@@ -48,11 +47,9 @@ const MembershipSection = () => {
           onClick={handleScheduleCall}
           className="bg-black px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-gray-300"
         >
-          <img 
-            src={callBackButton} 
-            alt="Schedule a Call back"
-            className="h-auto w-auto max-w-sm cursor-pointer"
-          />
+          <span className="text-white font-semibold text-lg">
+            Schedule a Call back
+          </span>
         </button>
       </div>
       
