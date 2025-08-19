@@ -4,6 +4,7 @@ import { Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
 import RegistrationDialog from "./RegistrationDialog";
 import SchoolRegistrationForm from "./SchoolRegistrationForm";
 import CollegeRegistrationForm from "./CollegeRegistrationForm";
+import zeromonkLogo from "@assets/image_1755601572382.png";
 
 const Footer = () => {
   const [showRegistrationDialog, setShowRegistrationDialog] = React.useState(false);
@@ -113,7 +114,7 @@ const Footer = () => {
             <div className="lg:col-span-1">
               <div className="mb-6">
                 <img 
-                  src="@assets/image_1755601572382.png" 
+                  src={zeromonkLogo} 
                   alt="ZEROMONK Logo" 
                   className="h-12 w-auto"
                 />
