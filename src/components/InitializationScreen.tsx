@@ -10,7 +10,7 @@ const InitializationScreen = ({ onComplete }: InitializationScreenProps) => {
 
   const brands = [
     { name: "zeromonk", delay: 1000 },
-    { name: "erschool", delay: 1000 }
+    { name: "zeroschool", delay: 1000 }
   ];
 
   useEffect(() => {
