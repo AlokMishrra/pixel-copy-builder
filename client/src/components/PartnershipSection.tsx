@@ -34,8 +34,14 @@ const PartnershipSection = () => {
   };
 
   const handlePartnershipClick = (type: 'institute' | 'incubation' | 'industry' | 'mentor') => {
-    // Open registration dialog for all partnership types
-    setShowRegistrationDialog(true);
+    if (type === 'industry') {
+      window.open('https://forms.gle/nhzVxZyZFUSMPCTF8', '_blank');
+    } else if (type === 'mentor') {
+      window.open('https://forms.gle/cgJ6PQxrgS3j3HYr5', '_blank');
+    } else {
+      // Open registration dialog for institute and incubation types
+      setShowRegistrationDialog(true);
+    }
   };
 
   return (
