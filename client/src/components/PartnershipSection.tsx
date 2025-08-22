@@ -38,8 +38,10 @@ const PartnershipSection = () => {
       window.open('https://forms.gle/nhzVxZyZFUSMPCTF8', '_blank');
     } else if (type === 'mentor') {
       window.open('https://forms.gle/cgJ6PQxrgS3j3HYr5', '_blank');
+    } else if (type === 'incubation') {
+      window.open('https://forms.gle/Mj5rQV5TxqzB4QQc8', '_blank');
     } else {
-      // Open registration dialog for institute and incubation types
+      // Open registration dialog for institute type
       setShowRegistrationDialog(true);
     }
   };
