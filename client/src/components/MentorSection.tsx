@@ -37,7 +37,7 @@ const MentorSection = () => {
   };
 
   const handleCallbackClick = () => {
-    setShowRegistrationDialog(true);
+    window.open('https://forms.gle/cgJ6PQxrgS3j3HYr5', '_blank');
   };
 
   return (
