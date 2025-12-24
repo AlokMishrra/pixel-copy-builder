@@ -6,5 +6,5 @@
     }
   ],
   "buildCommand": "npm run build:client",
-  "outputDirectory": "dist/public"
+  "outputDirectory": "dist"
 }
